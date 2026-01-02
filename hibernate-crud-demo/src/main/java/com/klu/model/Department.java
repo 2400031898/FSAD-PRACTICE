@@ -15,8 +15,6 @@ public class Department {
 
     @OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
     private List<Employee> employees;
-
-    // Getter & Setter for deptid
     public int getDeptId() {
         return deptid;
     }
@@ -24,8 +22,6 @@ public class Department {
     public void setDeptId(int deptid) {
         this.deptid = deptid;
     }
-
-    // Getter & Setter for deptname
     public String getDeptName() {
         return deptname;
     }
@@ -33,8 +29,6 @@ public class Department {
     public void setDeptName(String deptname) {
         this.deptname = deptname;
     }
-
-    // Getter & Setter for employees
     public List<Employee> getEmployees() {
         return employees;
     }
